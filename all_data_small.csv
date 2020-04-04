@@ -1,0 +1,761 @@
+﻿country,year,mortality_treatable,household_spending
+Australia,2000,83,
+Australia,2001,80,
+Australia,2002,78,
+Australia,2003,74,
+Australia,2004,70,
+Australia,2005,,
+Australia,2006,65,
+Australia,2007,62,
+Australia,2008,61,
+Australia,2009,58,
+Australia,2010,56,710.057
+Australia,2011,55,730.301
+Australia,2012,52,768.307
+Australia,2013,51,806.637
+Australia,2014,51,819.626
+Australia,2015,51,830.095
+Australia,2016,49,837.281
+Australia,2017,,
+Australia,2018,,
+Austria,2000,,
+Austria,2001,,
+Austria,2002,91,
+Austria,2003,88,
+Austria,2004,82,
+Austria,2005,79,
+Austria,2006,76,
+Austria,2007,72,
+Austria,2008,68,
+Austria,2009,68,
+Austria,2010,65,791.911
+Austria,2011,62,814.264
+Austria,2012,60,856.832
+Austria,2013,59,913.909
+Austria,2014,58,927.901
+Austria,2015,59,944.011
+Austria,2016,58,992.069
+Austria,2017,57,1012.016
+Austria,2018,,1362.521
+Belgium,2000,92,
+Belgium,2001,86,
+Belgium,2002,86,
+Belgium,2003,84,
+Belgium,2004,79,
+Belgium,2005,78,
+Belgium,2006,73,
+Belgium,2007,72,
+Belgium,2008,70,
+Belgium,2009,68,
+Belgium,2010,65,697.766
+Belgium,2011,63,726.559
+Belgium,2012,62,737.745
+Belgium,2013,61,784.161
+Belgium,2014,56,783.044
+Belgium,2015,56,793.802
+Belgium,2016,54,833.451
+Belgium,2017,,852.155
+Belgium,2018,,
+Canada,2000,86,
+Canada,2001,83,
+Canada,2002,81,
+Canada,2003,80,
+Canada,2004,77,
+Canada,2005,76,
+Canada,2006,72,
+Canada,2007,72,
+Canada,2008,71,
+Canada,2009,67,
+Canada,2010,65,630.946
+Canada,2011,63,612.324
+Canada,2012,62,615.083
+Canada,2013,61,622.42
+Canada,2014,60,638.824
+Canada,2015,59,648.76
+Canada,2016,,698.288
+Canada,2017,,721.586
+Canada,2018,,749.264
+Chile,2000,111,
+Chile,2001,113,
+Chile,2002,105,
+Chile,2003,101,
+Chile,2004,99,
+Chile,2005,95,
+Chile,2006,92,
+Chile,2007,91,
+Chile,2008,88,
+Chile,2009,90,
+Chile,2010,90,432.256
+Chile,2011,84,467.584
+Chile,2012,83,496.161
+Chile,2013,85,557.138
+Chile,2014,85,600.351
+Chile,2015,82,634.172
+Chile,2016,78,659.863
+Chile,2017,,702.635
+Chile,2018,,766.466
+Czech Republic,2000,167,
+Czech Republic,2001,159,
+Czech Republic,2002,157,
+Czech Republic,2003,154,
+Czech Republic,2004,147,
+Czech Republic,2005,139,
+Czech Republic,2006,134,
+Czech Republic,2007,128,
+Czech Republic,2008,124,
+Czech Republic,2009,123,
+Czech Republic,2010,120,305.189
+Czech Republic,2011,110,306.723
+Czech Republic,2012,109,319.666
+Czech Republic,2013,107,332.654
+Czech Republic,2014,98,361.148
+Czech Republic,2015,101,377.458
+Czech Republic,2016,96,394.78
+Czech Republic,2017,95,422.12
+Czech Republic,2018,,..
+Denmark,2000,106,
+Denmark,2001,103,
+Denmark,2002,105,
+Denmark,2003,100,
+Denmark,2004,97,
+Denmark,2005,89,
+Denmark,2006,86,
+Denmark,2007,83,
+Denmark,2008,77,
+Denmark,2009,75,
+Denmark,2010,73,598.453
+Denmark,2011,67,606.734
+Denmark,2012,64,610.981
+Denmark,2013,61,615.343
+Denmark,2014,58,624.847
+Denmark,2015,59,639.226
+Denmark,2016,,654.665
+Denmark,2017,,690.292
+Denmark,2018,,
+Estonia,2000,214,
+Estonia,2001,206,
+Estonia,2002,198,
+Estonia,2003,192,
+Estonia,2004,187,
+Estonia,2005,169,
+Estonia,2006,166,
+Estonia,2007,158,
+Estonia,2008,148,
+Estonia,2009,144,
+Estonia,2010,131,298.8
+Estonia,2011,122,302.63
+Estonia,2012,123,326.016
+Estonia,2013,113,369.905
+Estonia,2014,116,396.361
+Estonia,2015,107,425.434
+Estonia,2016,103,456.658
+Estonia,2017,,500.377
+Estonia,2018,,516.652
+Finland,2000,104,
+Finland,2001,95,
+Finland,2002,93,
+Finland,2003,88,
+Finland,2004,86,
+Finland,2005,82,
+Finland,2006,76,
+Finland,2007,74,
+Finland,2008,71,
+Finland,2009,71,
+Finland,2010,69,660.476
+Finland,2011,65,671.945
+Finland,2012,63,682.599
+Finland,2013,60,718.33
+Finland,2014,58,721.522
+Finland,2015,,789.278
+Finland,2016,58,824.812
+Finland,2017,,834.73
+Finland,2018,,848.399
+France,2000,72,
+France,2001,71,
+France,2002,69,
+France,2003,68,
+France,2004,64,
+France,2005,63,
+France,2006,61,
+France,2007,59,
+France,2008,58,
+France,2009,57,
+France,2010,55,413.759
+France,2011,52,426.075
+France,2012,51,434.994
+France,2013,49,452.488
+France,2014,48,456.957
+France,2015,48,453.856
+France,2016,,462.668
+France,2017,,462.72
+France,2018,,
+Germany,2000,101,
+Germany,2001,98,
+Germany,2002,96,
+Germany,2003,94,
+Germany,2004,89,
+Germany,2005,86,
+Germany,2006,83,
+Germany,2007,80,
+Germany,2008,77,
+Germany,2009,75,
+Germany,2010,73,614.277
+Germany,2011,71,634.718
+Germany,2012,69,661.658
+Germany,2013,69,649.343
+Germany,2014,66,653.154
+Germany,2015,67,678.717
+Germany,2016,66,706.324
+Germany,2017,,731.077
+Germany,2018,,738.147
+Greece,2000,,
+Greece,2001,,
+Greece,2002,,
+Greece,2003,,
+Greece,2004,,
+Greece,2005,,
+Greece,2006,,
+Greece,2007,,
+Greece,2008,,
+Greece,2009,,
+Greece,2010,,736.291
+Greece,2011,,713.402
+Greece,2012,,653.294
+Greece,2013,,704.432
+Greece,2014,74,748.119
+Greece,2015,75,765.181
+Greece,2016,75,760.62
+Greece,2017,,766.99
+Greece,2018,,
+Hungary,2000,210,
+Hungary,2001,193,
+Hungary,2002,190,
+Hungary,2003,191,
+Hungary,2004,183,
+Hungary,2005,182,
+Hungary,2006,173,
+Hungary,2007,169,
+Hungary,2008,162,
+Hungary,2009,162,
+Hungary,2010,156,456.617
+Hungary,2011,152,495.346
+Hungary,2012,147,518.861
+Hungary,2013,141,516.608
+Hungary,2014,139,528.162
+Hungary,2015,140,519.59
+Hungary,2016,134,544.243
+Hungary,2017,136,536.46
+Hungary,2018,,531.247
+Iceland,2000,76,
+Iceland,2001,77,
+Iceland,2002,67,
+Iceland,2003,71,
+Iceland,2004,67,
+Iceland,2005,59,
+Iceland,2006,62,
+Iceland,2007,64,
+Iceland,2008,63,
+Iceland,2009,52,
+Iceland,2010,48,602.553
+Iceland,2011,45,612.908
+Iceland,2012,44,631.118
+Iceland,2013,49,638.613
+Iceland,2014,45,647.221
+Iceland,2015,48,658.763
+Iceland,2016,44,660.653
+Iceland,2017,44,684.569
+Iceland,2018,,
+Ireland,2000,,
+Ireland,2001,,
+Ireland,2002,,
+Ireland,2003,,
+Ireland,2004,,
+Ireland,2005,,
+Ireland,2006,,
+Ireland,2007,84,
+Ireland,2008,85,
+Ireland,2009,82,
+Ireland,2010,73,558.626
+Ireland,2011,72,585.097
+Ireland,2012,69,607.404
+Ireland,2013,66,614.311
+Ireland,2014,64,596.603
+Ireland,2015,65,569.828
+Ireland,2016,,571.189
+Ireland,2017,,568.756
+Ireland,2018,,
+Israel,2000,107,
+Israel,2001,100,
+Israel,2002,95,
+Israel,2003,91,
+Israel,2004,88,
+Israel,2005,87,
+Israel,2006,83,
+Israel,2007,81,
+Israel,2008,77,
+Israel,2009,72,
+Israel,2010,70,470.342
+Israel,2011,70,494.617
+Israel,2012,69,520.449
+Israel,2013,66,507.103
+Israel,2014,63,514.923
+Israel,2015,65,519.43
+Israel,2016,62,569.77
+Israel,2017,,593.299
+Israel,2018,,
+Italy,2000,,
+Italy,2001,,
+Italy,2002,,
+Italy,2003,73,
+Italy,2004,69,
+Italy,2005,67,
+Italy,2006,65,
+Italy,2007,63,
+Italy,2008,62,
+Italy,2009,60,
+Italy,2010,58,637.668
+Italy,2011,59,682.45
+Italy,2012,58,674.361
+Italy,2013,55,672.16
+Italy,2014,54,680.803
+Italy,2015,55,724.059
+Italy,2016,,748.359
+Italy,2017,,792.955
+Italy,2018,,791.245
+Japan,2000,70,
+Japan,2001,68,
+Japan,2002,65,
+Japan,2003,65,
+Japan,2004,63,
+Japan,2005,63,
+Japan,2006,62,
+Japan,2007,60,
+Japan,2008,59,
+Japan,2009,57,
+Japan,2010,56,461.811
+Japan,2011,57,490.854
+Japan,2012,55,515.101
+Japan,2013,54,547.203
+Japan,2014,53,557.047
+Japan,2015,52,584.828
+Japan,2016,51,580.099
+Japan,2017,,594.793
+Japan,2018,,607.6
+Korea,2000,102,
+Korea,2001,99,
+Korea,2002,96,
+Korea,2003,89,
+Korea,2004,84,
+Korea,2005,77,
+Korea,2006,73,
+Korea,2007,69,
+Korea,2008,64,
+Korea,2009,59,
+Korea,2010,58,650.263
+Korea,2011,55,683.045
+Korea,2012,54,727.109
+Korea,2013,51,739.402
+Korea,2014,49,766.658
+Korea,2015,48,846.587
+Korea,2016,47,893.344
+Korea,2017,,966.387
+Korea,2018,,1048.467
+Latvia,2000,225,
+Latvia,2001,232,
+Latvia,2002,230,
+Latvia,2003,222,
+Latvia,2004,217,
+Latvia,2005,223,
+Latvia,2006,222,
+Latvia,2007,214,
+Latvia,2008,201,
+Latvia,2009,190,
+Latvia,2010,188,400.014
+Latvia,2011,180,369.567
+Latvia,2012,173,437.31
+Latvia,2013,168,473.081
+Latvia,2014,159,503.089
+Latvia,2015,157,591.104
+Latvia,2016,,705.318
+Latvia,2017,,689.206
+Latvia,2018,,
+Lithuania,2000,180,
+Lithuania,2001,183,
+Lithuania,2002,190,
+Lithuania,2003,187,
+Lithuania,2004,189,
+Lithuania,2005,202,
+Lithuania,2006,205,
+Lithuania,2007,206,
+Lithuania,2008,196,
+Lithuania,2009,182,
+Lithuania,2010,174,378.283
+Lithuania,2011,170,419.026
+Lithuania,2012,168,498.638
+Lithuania,2013,165,545.66
+Lithuania,2014,155,561.092
+Lithuania,2015,163,610.537
+Lithuania,2016,157,665.033
+Lithuania,2017,141,704.397
+Lithuania,2018,,779.712
+Luxembourg,2000,85,
+Luxembourg,2001,80,
+Luxembourg,2002,88,
+Luxembourg,2003,89,
+Luxembourg,2004,68,
+Luxembourg,2005,73,
+Luxembourg,2006,75,
+Luxembourg,2007,67,
+Luxembourg,2008,65,
+Luxembourg,2009,59,
+Luxembourg,2010,66,575.388
+Luxembourg,2011,61,525.591
+Luxembourg,2012,54,543.412
+Luxembourg,2013,60,525.696
+Luxembourg,2014,49,529.832
+Luxembourg,2015,51,510.284
+Luxembourg,2016,51,510.005
+Luxembourg,2017,,526.945
+Luxembourg,2018,,
+Mexico,2000,163,
+Mexico,2001,152,
+Mexico,2002,154,
+Mexico,2003,156,
+Mexico,2004,154,
+Mexico,2005,161,
+Mexico,2006,155,
+Mexico,2007,153,
+Mexico,2008,157,
+Mexico,2009,156,
+Mexico,2010,152,423.332
+Mexico,2011,149,401.697
+Mexico,2012,150,427.801
+Mexico,2013,147,424.69
+Mexico,2014,150,416.699
+Mexico,2015,149,444.907
+Mexico,2016,155,430.381
+Mexico,2017,,456.169
+Mexico,2018,,
+Netherlands,2000,92,
+Netherlands,2001,88,
+Netherlands,2002,87,
+Netherlands,2003,84,
+Netherlands,2004,78,
+Netherlands,2005,76,
+Netherlands,2006,73,
+Netherlands,2007,69,
+Netherlands,2008,67,
+Netherlands,2009,65,
+Netherlands,2010,63,406.812
+Netherlands,2011,60,433.094
+Netherlands,2012,60,482.567
+Netherlands,2013,56,567.952
+Netherlands,2014,52,571.774
+Netherlands,2015,53,556.261
+Netherlands,2016,52,567.105
+Netherlands,2017,,571.549
+Netherlands,2018,,570.195
+New Zealand,2000,105,
+New Zealand,2001,103,
+New Zealand,2002,99,
+New Zealand,2003,94,
+New Zealand,2004,91,
+New Zealand,2005,85,
+New Zealand,2006,85,
+New Zealand,2007,85,
+New Zealand,2008,81,
+New Zealand,2009,79,
+New Zealand,2010,73,364.07
+New Zealand,2011,72,378.971
+New Zealand,2012,71,397.398
+New Zealand,2013,67,419.166
+New Zealand,2014,66,449.263
+New Zealand,2015,,469.551
+New Zealand,2016,,497.167
+New Zealand,2017,,508.085
+New Zealand,2018,,506.478
+Norway,2000,88,
+Norway,2001,85,
+Norway,2002,84,
+Norway,2003,77,
+Norway,2004,71,
+Norway,2005,71,
+Norway,2006,70,
+Norway,2007,67,
+Norway,2008,65,
+Norway,2009,62,
+Norway,2010,58,718.492
+Norway,2011,57,755.196
+Norway,2012,56,771.022
+Norway,2013,52,800.619
+Norway,2014,50,820.637
+Norway,2015,48,810.144
+Norway,2016,47,828.246
+Norway,2017,,859.656
+Norway,2018,,876.824
+Poland,2000,157,
+Poland,2001,149,
+Poland,2002,141,
+Poland,2003,140,
+Poland,2004,136,
+Poland,2005,133,
+Poland,2006,133,
+Poland,2007,130,
+Poland,2008,127,
+Poland,2009,124,
+Poland,2010,117,337.409
+Poland,2011,114,358.511
+Poland,2012,112,383.032
+Poland,2013,108,395.064
+Poland,2014,100,390.141
+Poland,2015,100,419.13
+Poland,2016,99,439.397
+Poland,2017,,466.995
+Poland,2018,,423.357
+Portugal,2000,,
+Portugal,2001,,
+Portugal,2002,104,
+Portugal,2003,100,
+Portugal,2004,,
+Portugal,2005,,
+Portugal,2006,,
+Portugal,2007,82,
+Portugal,2008,82,
+Portugal,2009,80,
+Portugal,2010,76,620.953
+Portugal,2011,73,633.292
+Portugal,2012,71,660.901
+Portugal,2013,69,651.776
+Portugal,2014,69,678.892
+Portugal,2015,68,704.307
+Portugal,2016,69,741.417
+Portugal,2017,,759.515
+Portugal,2018,,782.704
+Slovak Republic,2000,202,
+Slovak Republic,2001,199,
+Slovak Republic,2002,193,
+Slovak Republic,2003,190,
+Slovak Republic,2004,184,
+Slovak Republic,2005,181,
+Slovak Republic,2006,178,
+Slovak Republic,2007,171,
+Slovak Republic,2008,164,
+Slovak Republic,2009,157,
+Slovak Republic,2010,154,458.388
+Slovak Republic,2011,,465.483
+Slovak Republic,2012,138,487.291
+Slovak Republic,2013,139,502.278
+Slovak Republic,2014,129,361.979
+Slovak Republic,2015,,379.874
+Slovak Republic,2016,,397.966
+Slovak Republic,2017,,409.383
+Slovak Republic,2018,,
+Slovenia,2000,113,
+Slovenia,2001,111,
+Slovenia,2002,110,
+Slovenia,2003,107,
+Slovenia,2004,101,
+Slovenia,2005,96,
+Slovenia,2006,90,
+Slovenia,2007,83,
+Slovenia,2008,82,
+Slovenia,2009,79,
+Slovenia,2010,75,293.06
+Slovenia,2011,72,289.87
+Slovenia,2012,69,302.902
+Slovenia,2013,68,310.784
+Slovenia,2014,64,324.47
+Slovenia,2015,66,321.738
+Slovenia,2016,,322.01
+Slovenia,2017,,345.18
+Slovenia,2018,,344.191
+Spain,2000,80,
+Spain,2001,78,
+Spain,2002,76,
+Spain,2003,76,
+Spain,2004,71,
+Spain,2005,71,
+Spain,2006,68,
+Spain,2007,67,
+Spain,2008,65,
+Spain,2009,62,
+Spain,2010,59,565.642
+Spain,2011,58,575.114
+Spain,2012,56,622.714
+Spain,2013,55,662.964
+Spain,2014,53,695.037
+Spain,2015,53,719.47
+Spain,2016,53,743.469
+Spain,2017,,759.799
+Spain,2018,,
+Sweden,2000,86,
+Sweden,2001,82,
+Sweden,2002,81,
+Sweden,2003,78,
+Sweden,2004,72,
+Sweden,2005,70,
+Sweden,2006,69,
+Sweden,2007,65,
+Sweden,2008,66,
+Sweden,2009,63,
+Sweden,2010,60,583.797
+Sweden,2011,58,674.608
+Sweden,2012,57,723.063
+Sweden,2013,57,738.008
+Sweden,2014,53,757.261
+Sweden,2015,55,778.546
+Sweden,2016,51,774.264
+Sweden,2017,,791.376
+Sweden,2018,,806.833
+Switzerland,2000,70,
+Switzerland,2001,64,
+Switzerland,2002,63,
+Switzerland,2003,61,
+Switzerland,2004,57,
+Switzerland,2005,57,
+Switzerland,2006,55,
+Switzerland,2007,53,
+Switzerland,2008,52,
+Switzerland,2009,52,
+Switzerland,2010,50,1540.173
+Switzerland,2011,47,1562.364
+Switzerland,2012,45,1669.486
+Switzerland,2013,44,1754.214
+Switzerland,2014,43,1882.646
+Switzerland,2015,42,1965.706
+Switzerland,2016,40,2052.256
+Switzerland,2017,,2068.844
+Switzerland,2018,,
+Turkey,2000,,
+Turkey,2001,,
+Turkey,2002,,
+Turkey,2003,,
+Turkey,2004,,
+Turkey,2005,,
+Turkey,2006,,
+Turkey,2007,,
+Turkey,2008,,
+Turkey,2009,100,
+Turkey,2010,97,142.276
+Turkey,2011,97,141.198
+Turkey,2012,93,142.55
+Turkey,2013,106,160.421
+Turkey,2014,110,178.451
+Turkey,2015,110,176.326
+Turkey,2016,113,185.533
+Turkey,2017,,206.106
+Turkey,2018,,
+Brazil,2000,314,
+Brazil,2001,302,
+Brazil,2002,298,
+Brazil,2003,149,
+Brazil,2004,150,
+Brazil,2005,146,
+Brazil,2006,149,
+Brazil,2007,147,
+Brazil,2008,147,
+Brazil,2009,147,
+Brazil,2010,146,290.098
+Brazil,2011,147,306.219
+Brazil,2012,143,325.463
+Brazil,2013,143,334.162
+Brazil,2014,140,361.331
+Brazil,2015,139,363.906
+Brazil,2016,,351.252
+Brazil,2017,,
+Brazil,2018,,
+Colombia,2000,144,
+Colombia,2001,140,
+Colombia,2002,135,
+Colombia,2003,135,
+Colombia,2004,131,
+Colombia,2005,121,
+Colombia,2006,126,
+Colombia,2007,120,
+Colombia,2008,118,
+Colombia,2009,110,
+Colombia,2010,107,130.924
+Colombia,2011,101,138.293
+Colombia,2012,102,144.25
+Colombia,2013,99,150.723
+Colombia,2014,96,152.464
+Colombia,2015,97,151.461
+Colombia,2016,,152.543
+Colombia,2017,,156.588
+Colombia,2018,,
+Costa Rica,2000,108,
+Costa Rica,2001,109,
+Costa Rica,2002,97,
+Costa Rica,2003,100,
+Costa Rica,2004,99,
+Costa Rica,2005,90,
+Costa Rica,2006,94,
+Costa Rica,2007,81,
+Costa Rica,2008,81,
+Costa Rica,2009,81,
+Costa Rica,2010,91,263.272
+Costa Rica,2011,85,284.275
+Costa Rica,2012,83,274.271
+Costa Rica,2013,81,261.743
+Costa Rica,2014,83,289.768
+Costa Rica,2015,,280.9
+Costa Rica,2016,,282.813
+Costa Rica,2017,,
+Costa Rica,2018,,
+South Africa,2000,351,
+South Africa,2001,388,
+South Africa,2002,423,
+South Africa,2003,466,
+South Africa,2004,464,
+South Africa,2005,474,
+South Africa,2006,455,
+South Africa,2007,447,
+South Africa,2008,428,
+South Africa,2009,413,
+South Africa,2010,387,73.62
+South Africa,2011,360,77.41
+South Africa,2012,325,78.915
+South Africa,2013,296,80.296
+South Africa,2014,286,82.13
+South Africa,2015,278,82.775
+South Africa,2016,,83.055
+South Africa,2017,,
+South Africa,2018,,
+United Kingdom,2000,,
+United Kingdom,2001,112,
+United Kingdom,2002,108,
+United Kingdom,2003,105,
+United Kingdom,2004,99,
+United Kingdom,2005,95,
+United Kingdom,2006,92,
+United Kingdom,2007,88,
+United Kingdom,2008,86,
+United Kingdom,2009,81,
+United Kingdom,2010,78,281.128
+United Kingdom,2011,73,287.591
+United Kingdom,2012,71,288.364
+United Kingdom,2013,70,537.29
+United Kingdom,2014,68,549.318
+United Kingdom,2015,69,560.034
+United Kingdom,2016,69,593.889
+United Kingdom,2017,,629.167
+United Kingdom,2018,,
+United States,2000,116,
+United States,2001,113,
+United States,2002,112,
+United States,2003,109,
+United States,2004,104,
+United States,2005,103,
+United States,2006,100,
+United States,2007,97,
+United States,2008,96,
+United States,2009,93,
+United States,2010,90,969.152
+United States,2011,90,994.666
+United States,2012,87,1015.297
+United States,2013,89,1030.544
+United States,2014,88,1038.636
+United States,2015,87,1061.914
+United States,2016,88,1101.047
+United States,2017,,1121.994
+United States,2018,,
