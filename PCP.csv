@@ -1,0 +1,127 @@
+country,year,pcp
+Australia,2000,1.38
+Australia,2001,1.39
+Australia,2002,1.37
+Australia,2003,1.41
+Australia,2004,1.42
+Australia,2005,1.45
+Australia,2006,1.44
+Australia,2007,1.51
+Australia,2008,1.5
+Australia,2009,1.54
+Australia,2010,..
+Australia,2011,..
+Australia,2012,1.56
+Australia,2013,1.52
+Australia,2014,1.54
+Australia,2015,1.57
+Australia,2016,1.57
+Australia,2017,1.62
+Canada,2000,1
+Canada,2001,1
+Canada,2002,1.01
+Canada,2003,1.02
+Canada,2004,1.03
+Canada,2005,1.04
+Canada,2006,1.05
+Canada,2007,1.06
+Canada,2008,1.08
+Canada,2009,1.11
+Canada,2010,1.12
+Canada,2011,1.15
+Canada,2012,1.18
+Canada,2013,1.21
+Canada,2014,1.24
+Canada,2015,1.25
+Canada,2016,1.27
+Canada,2017,1.3
+Denmark,2000,0.74
+Denmark,2001,0.74
+Denmark,2002,0.74
+Denmark,2003,0.74
+Denmark,2004,0.78
+Denmark,2005,0.77
+Denmark,2006,0.77
+Denmark,2007,0.77
+Denmark,2008,0.79
+Denmark,2009,0.79
+Denmark,2010,0.79
+Denmark,2011,0.79
+Denmark,2012,0.8
+Denmark,2013,0.79
+Denmark,2014,0.8
+Denmark,2015,0.8
+Denmark,2016,0.8
+Denmark,2017,..
+France,2000,1.62
+France,2001,1.63
+France,2002,1.63
+France,2003,1.64
+France,2004,1.65
+France,2005,1.65
+France,2006,1.64
+France,2007,1.63
+France,2008,1.62
+France,2009,1.6
+France,2010,1.59
+France,2011,1.43
+France,2012,1.43
+France,2013,1.43
+France,2014,1.42
+France,2015,1.42
+France,2016,1.41
+France,2017,1.42
+Germany,2000,0.89
+Germany,2001,0.89
+Germany,2002,0.89
+Germany,2003,0.88
+Germany,2004,0.85
+Germany,2005,0.85
+Germany,2006,0.83
+Germany,2007,0.83
+Germany,2008,0.84
+Germany,2009,0.87
+Germany,2010,0.91
+Germany,2011,0.94
+Germany,2012,0.94
+Germany,2013,0.97
+Germany,2014,0.99
+Germany,2015,0.97
+Germany,2016,0.98
+Germany,2017,1
+Netherlands,2000,1.16
+Netherlands,2001,1.18
+Netherlands,2002,1.18
+Netherlands,2003,1.2
+Netherlands,2004,1.21
+Netherlands,2005,1.17
+Netherlands,2006,1.21
+Netherlands,2007,1.2
+Netherlands,2008,1.24
+Netherlands,2009,1.26
+Netherlands,2010,1.25
+Netherlands,2011,1.4
+Netherlands,2012,1.44
+Netherlands,2013,1.46
+Netherlands,2014,1.52
+Netherlands,2015,1.56
+Netherlands,2016,1.59
+Netherlands,2017,1.61
+United States,2000,0.3
+United States,2001,0.3
+United States,2002,0.3
+United States,2003,0.31
+United States,2004,0.3
+United States,2005,0.3
+United States,2006,0.3
+United States,2007,0.3
+United States,2008,0.3
+United States,2009,0.3
+United States,2010,0.3
+United States,2011,0.3
+United States,2012,0.3
+United States,2013,0.31
+United States,2014,0.31
+United States,2015,0.31
+United States,2016,0.31
+United States,2017,0.31
