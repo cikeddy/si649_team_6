@@ -36,6 +36,7 @@
 				</header>
 				<div class="container">
 					<ul class="actions">
+						<p>**description about dataset to be added**</p>
 						<li><a href="#one" class="button special scrolly">Lets find out!</a></li>
 					</ul>
 				</div>
@@ -57,13 +58,16 @@
 					<span class="image fit primary"><img src="images/pic01.jpg" alt="" /></span>
 					<div class="content">
 						<header class="major">
-							<h2>1. Who spends most (all countries)?</h2>
+							<h2>1. Which country spends the most on Health Care in our data set?</h2>
 						</header>
 						<div class="image fit">
 							<img src="images/img_1.png" alt="" />
+						</div>
+						<p>Based on the trend over time, you can see that in total the U.S. spent the most on healthcare compared to other countries from 1995 to 2018.</p>
+						<div class="image fit">
 							<img src="images/img_spend.svg" alt="" />
 						</div>
-						<p>Based on the chart, you can see that overtime, the U.S. spends the most on Healthcare compared to other countries. We wanted to see if high healthcare expenditure resulted in high healthcare quality results.</p>
+						<p>In 2015 (our most recent year with complete data) the U.S. was second for household expenditure, which is the amount of money citizens pay out of pocket for their healthcare.  We wanted to see if high healthcare expenditure resulted in high healthcare quality results.</p>
 					</div>
 					<a href="#two" class="goto-next scrolly">Next</a>
 				</div>
@@ -75,9 +79,17 @@
 					<span class="image fit primary"><img src="images/pic02.jpg" alt="" /></span>
 					<div class="content">
 						<header class="major">
-							<h2>2. Who to compare?</h2>
+							<h2>2. Narrowing down our data set</h2>
 						</header>
-						<p>Too many components in a chart to compare - better to narrow our scope to 6-8 comparable countries based on a country’s GDP, per-capita GDP, and population. </p>
+						<p>There are more than 80 countries in the OECD dataset that we can compare. After plotting the countries’ health expenditures, we felt that there were too many components in a chart to compare. As a result, we thought it would be best to narrow our scope to 6-8 comparable countries based on a country’s GDP, per-capita GDP, and population. 
+							We applied the following criteria to select our comparable countries: 
+							<ol><li>OECD Countries: We selected OECD countries only, which reduced the total number of countries to 35.</li>
+								<li>Economic Status: Divide remaining countries into two categories of High income and High-Medium income to choose from.</li>
+								<li>High: GDP > $2 trillion; per-capita income > $30k; population > 60m </li>
+								<li>High-Medium: $750 billion < GDP < $2 trillion;  per-capita income > $30k; 15m < population < 60m </li>
+								<li>Data Availability: Since there is a lot of missing data, at this step we chose to select only those countries with the most complete data. </li>
+						    </ol>
+							 </p>
 						<ul class="icons-grid">
 							<li>
 								<h3>OECD countries only (35 / 80)  </h3>
@@ -96,6 +108,8 @@
 								<img style="width:auto;height:auto;max-width:100px;max-height:100px;" src="images/img_uk.png" alt="US" />
 								<img style="width:auto;height:auto;max-width:100px;max-height:100px;" src="images/img_nld.png" alt="US" />
 							</div>
+							<p>Based on the criteria mentioned earlier, we decided to select the following seven comparable  countries: <strong>United States, Great Britain, Germany, France, Netherlands, Canada, and Australia.</strong></p>
+
 
 					</div>
 					<a href="#three" class="goto-next scrolly">Next</a>
@@ -194,7 +208,7 @@
 								</div>
 									<p>US is the worst in terms of mortality rate compared to other comparable countries.</p>
 								</div>
-								<a href="#footer" class="goto-next scrolly">Next</a>
+								<!-- <a href="#footer" class="goto-next scrolly">Next</a> -->
 							</div>
 						</section>
 
@@ -522,7 +536,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 		-->
 
 		<!-- Footer -->
-			<section id="footer">
+			<!-- <section id="footer">
 				<div class="container">
 					<header class="major">
 						<h2>Get in touch</h2>
@@ -552,7 +566,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Demo Images: <a href="http://unsplash.com">Unsplash</a></li>
 					</ul>
 				</footer>
-			</section>
+			</section> -->
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
