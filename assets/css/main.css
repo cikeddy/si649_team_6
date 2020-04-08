@@ -90,7 +90,7 @@
 		.container.\31 25\25 {
 			width: 100%;
 			max-width: 43.75em;
-			min-width: 35em;
+			min-width: 70em;
 		}
 
 		.container.\37 5\25 {
@@ -106,7 +106,7 @@
 		}
 
 		.container {
-			width: 35em;
+			width: 70em;
 		}
 
 	}
@@ -2728,7 +2728,7 @@
 		#header .container {
 			background: rgba(255, 255, 255, 0.95);
 			bottom: 0;
-			left: 50%;
+			left: 31.65%;
 			margin-left: -17.5em;
 			padding: 2.5em;
 			position: absolute;
