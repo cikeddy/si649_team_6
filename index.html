@@ -19,7 +19,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
 		<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script> -->
 
-		<script src="https://cdn.jsdelivr.net/npm/vega@5.10.1"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vega@5.10.1"></script>
 	 <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.10.1"></script>
 	 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.5.2"></script>
 
@@ -28,15 +28,17 @@
 	<body>
 
 		<!-- Header -->
-			<section id="header">
+			<section id="header" style="margin: 0 auto;">
 				<header class="major">
-					<h1>Does US have the best healthcare on this planet?</h1>
+					<h1>Does the U.S. have the best healthcare on the planet?</h1>
 					<p>SI 649 - Team 6</p>
-					<p>Kim Vuong, Amanda Kim, Vinoothna Bavireddy, Cassie Eddy, Prabhjot Singh</p>
+					<p>Kim Vuong, Amanda Jung, Vinoothna Bavireddy, Cassie Eddy, Prabhjot Singh</p>
 				</header>
 				<div class="container">
 					<ul class="actions">
-						<p>**description about dataset to be added**</p>
+						<p>Although the United States is often viewed as having some of the best healthcare in the world, the validity of this assertion has been called into question for a number of years. 
+							With this visualization analysis we endeavor to look at certain factors of healthcare in the US and how it compares to some of the other “comparable” countries.
+							We used to <a href="https://stats.oecd.org/Index.aspx">OECD data </a>set to explore this overarching question.</p>
 						<li><a href="#one" class="button special scrolly">Lets find out!</a></li>
 					</ul>
 				</div>
@@ -60,14 +62,14 @@
 						<header class="major">
 							<h2>1. Which country spends the most on Health Care in our data set?</h2>
 						</header>
-						<div class="image fit">
-							<img src="images/img_1.png" alt="" />
-						</div>
 						<p>Based on the trend over time, you can see that in total the U.S. spent the most on healthcare compared to other countries from 1995 to 2018.</p>
-						<div class="image fit">
+						<div class="">
+							<img src="images/img_1.png" alt="" style="max-width: 60%;"/>
+						</div>
+						<p>Using data from 2015, and numbers from the United States as a baseline for comparison (mid-line) the U.S. was second for household expenditure (the amount of money citizens pay out of pocket for their healthcare).  We wanted to see if high healthcare expenditure resulted in high healthcare quality results.</p>
+						<div class="">
 							<img src="images/img_spend.svg" alt="" />
 						</div>
-						<p>In 2015 (our most recent year with complete data) the U.S. was second for household expenditure, which is the amount of money citizens pay out of pocket for their healthcare.  We wanted to see if high healthcare expenditure resulted in high healthcare quality results.</p>
 					</div>
 					<a href="#two" class="goto-next scrolly">Next</a>
 				</div>
@@ -134,29 +136,50 @@
 								-->
 							</header>
 							<div class="">
-								<div class="row">
-  								<div class="column">
+								<p>A larger percentage of Americans believe their health is above "fair" than the other 6 countries. Based on this statistic and the money we spend on healthcare, we expected other quality metrics to align.</p>
+								  <div id="ph">
+									<script type="text/javascript">
+											let jsonSpec4="ph.json";
+											vegaEmbed('#ph', jsonSpec4,{"renderer":"svg"}).then(function(result) {
+											}).catch(console.error);
+										</script>
+								</div>
+									<p>The United States has consistently had the lowest life expectancy at birth compared to the other 6 countries for the past 17 years.</p>
+									<div id="life_expectancy">
+										<script type="text/javascript">
+												let jsonSpec="life_expectancy.json";
+												vegaEmbed('#life_expectancy', jsonSpec,{"renderer":"svg"}).then(function(result) {
+												}).catch(console.error);
+										</script>
+									</div>
+									<div class="image fit primary">
     								<img src="images/img_life.svg" style="width:100%">
-  								</div>
-  								<div class="column">
-    								<img src="images/img_pcp.svg" style="width:100%">
-  								</div>
-  								<div class="column">
-    								<img src="images/img_ss.svg" style="width:100%">
-  							</div>
-  							<div class="column">
-    							<img src="images/img_ph.svg" style="width:100%">
-  							</div>
-							</div>
-							</div>
-							<p>The only country with not 100% of its population insured for health is the United States. The United States is also the only country that has had no growth in the number of PCPs over the past 18 years despite its population continuing to grow.
-							Moreover, the United States has the highest spending and the highest rate of response of patients skipping consultations due to costs. US has consistently had the lowest life expectancy at birth compared to the other 6 countries for the past 17 years.</p>
+								  </div>
+								  <p>The United States is also the only country that has had no growth in the number of primary care physicians (PCPs) over the past 18 years despite its population continuing to grow.</p>
+								  <div id="pcp">
+									<script type="text/javascript">
+											let jsonSpec3="pcp.json";
+											vegaEmbed('#pcp', jsonSpec3,{"renderer":"svg"}).then(function(result) {
+											}).catch(console.error);
+									</script>
+									</div>
+
+								  <p>The United States also has the highest treatable mortality compared to the other 6 countries.</p>
+								 
+								  <div id="treatable_mortality">
+									<script type="text/javascript">
+											let jsonSpec2="treatable_mortality.json";
+											vegaEmbed('#treatable_mortality', jsonSpec2,{"renderer":"svg"}).then(function(result) {
+											}).catch(console.error);
+										</script>
+								</div>
+							<p>In addition, the United States is the only country with less than 99% of its population insured for healthcare.</p>
 						</div>
-						<a href="#footer" class="goto-next scrolly">Next</a>
+						<a href="#four" class="goto-next scrolly">Next</a>
 					</div>
 				</section>
 
-				<!-- Four -->
+				<!-- Four
 					<section id="three" class="main special">
 						<div class="container">
 							<span class="image fit primary"><img src="images/pic03.jpg" alt="" /></span>
@@ -171,42 +194,44 @@
 							</div>
 							<a href="#footer" class="goto-next scrolly">Next</a>
 						</div>
-					</section>
+					</section> -->
 
-					<!-- Five -->
-						<section id="three" class="main special">
+					<!-- Four -->
+						<section id="four" class="main special">
 							<div class="container">
 								<span class="image fit primary"><img src="images/pic03.jpg" alt="" /></span>
 								<div class="content">
 									<header class="major">
-										<h2>5. Is it worth it ?</h2>
+										<h2>4. Is it worth it to spend more?</h2>
 									</header>
-									<div class="image fit">
+									<p>Interestingly, countries with households that spend more on healthcare appear to have higher treatable mortality (deaths per 100,000 considered treatable through more effective and timely health care interventions), indicating that spending could be positively correlated with mortality.</p>
+									<div class="">
 										<img src="images/img_worth.svg" alt="" />
 									</div>
-									<p>US is the worst in terms of mortality rate compared to other comparable countries.</p>
 								</div>
-								<a href="#footer" class="goto-next scrolly">Next</a>
+								<a href="#five" class="goto-next scrolly">Next</a>
 							</div>
 						</section>
 
-					<!-- Six -->
-						<section id="three" class="main special">
+					<!-- Five -->
+						<section id="five" class="main special">
 							<div class="container">
 								<span class="image fit primary"><img src="images/pic03.jpg" alt="" /></span>
 								<div class="content">
 									<header class="major">
-										<h2>6. Explore</h2>
+										<h2>5. So, where would you want to live?</h2>
 									</header>
-									<div id="viz1" class="image fit">
+									<p>To answer this question we calculated a return on investment (ROI) metric based on treatable morality and household spending ((100,000 - treatable mortality deaths)/(household spending)). Based on our calculation, France ranked #1 and the United States ranked last.
+										You can explore each country's trend over time by clicking on it in the scatter chart on the left.
+									</p>
+									<div id="viz1" class="">
 											<script type="text/javascript">
-													let jsonSpec="viz1.json";
-													vegaEmbed('#viz1', jsonSpec,{theme: 'latimes',"renderer":"svg"}).then(function(result) {
+													let jsonSpec5="viz1.json";
+													vegaEmbed('#viz1', jsonSpec5,{"renderer":"svg"}).then(function(result) {
 													}).catch(console.error);
 											</script>
 									</div>
 								</div>
-									<p>US is the worst in terms of mortality rate compared to other comparable countries.</p>
 								</div>
 								<!-- <a href="#footer" class="goto-next scrolly">Next</a> -->
 							</div>
