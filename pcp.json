@@ -3315,12 +3315,95 @@
     {
       "name": "data_0",
       "source": "data-9c77498de2e751177ff176691dbe0658",
-      "transform": [{"type": "filter", "expr": "(datum.year < 2017)"}]
+      "transform": [
+        {
+          "type": "formula",
+          "expr": "toString(datum[\"country\"])",
+          "as": "country"
+        }
+      ]
     },
     {
       "name": "data_1",
       "source": "data_0",
       "transform": [
+        {
+          "type": "filter",
+          "expr": "indexof([\"France\",\"United Kingdom\",\"Germany\",\"Netherlands\",\"Australia\",\"Canada\"], datum[\"country\"]) !== -1"
+        },
+        {"type": "filter", "expr": "(datum.year < 2016)"}
+      ]
+    },
+    {
+      "name": "data_2",
+      "source": "data_1",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"pcp\"]) && isFinite(+datum[\"pcp\"])"
+        }
+      ]
+    },
+    {
+      "name": "data_3",
+      "source": "data_0",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "indexof([\"United States\"], datum[\"country\"]) !== -1"
+        },
+        {"type": "filter", "expr": "(datum.year < 2016)"}
+      ]
+    },
+    {
+      "name": "data_4",
+      "source": "data_3",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"pcp\"]) && isFinite(+datum[\"pcp\"])"
+        }
+      ]
+    },
+    {
+      "name": "data_5",
+      "source": "data_0",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "indexof([\"United States\",\"France\",\"United Kingdom\",\"Germany\",\"Canada\"], datum[\"country\"]) !== -1"
+        },
+        {"type": "filter", "expr": "(datum.year === 2015)"},
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"pcp\"]) && isFinite(+datum[\"pcp\"])"
+        }
+      ]
+    },
+    {
+      "name": "data_6",
+      "source": "data_0",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "indexof([\"Netherlands\"], datum[\"country\"]) !== -1"
+        },
+        {"type": "filter", "expr": "(datum.year === 2015)"},
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"pcp\"]) && isFinite(+datum[\"pcp\"])"
+        }
+      ]
+    },
+    {
+      "name": "data_7",
+      "source": "data_0",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "indexof([\"Australia\"], datum[\"country\"]) !== -1"
+        },
+        {"type": "filter", "expr": "(datum.year === 2015)"},
         {
           "type": "filter",
           "expr": "isValid(datum[\"pcp\"]) && isFinite(+datum[\"pcp\"])"
@@ -3337,12 +3420,12 @@
   ],
   "marks": [
     {
-      "name": "layer_0_pathgroup",
+      "name": "layer_0_layer_0_pathgroup",
       "type": "group",
       "from": {
         "facet": {
-          "name": "faceted_path_layer_0_main",
-          "data": "data_0",
+          "name": "faceted_path_layer_0_layer_0_main",
+          "data": "data_1",
           "groupby": ["country"]
         }
       },
@@ -3354,11 +3437,11 @@
       },
       "marks": [
         {
-          "name": "layer_0_marks",
+          "name": "layer_0_layer_0_marks",
           "type": "line",
           "style": ["line"],
           "sort": {"field": "datum[\"year\"]"},
-          "from": {"data": "faceted_path_layer_0_main"},
+          "from": {"data": "faceted_path_layer_0_layer_0_main"},
           "encode": {
             "update": {
               "stroke": {"scale": "color", "field": "country"},
@@ -3376,10 +3459,10 @@
       ]
     },
     {
-      "name": "layer_1_marks",
+      "name": "layer_0_layer_1_marks",
       "type": "symbol",
       "style": ["point"],
-      "from": {"data": "data_1"},
+      "from": {"data": "data_2"},
       "encode": {
         "update": {
           "opacity": {"value": 1},
@@ -3388,13 +3471,105 @@
             "signal": "{\"country\": ''+datum[\"country\"], \"year\": format(datum[\"year\"], \"\"), \"pcp\": ''+datum[\"pcp\"]}"
           },
           "x": {"scale": "x", "field": "year"},
-          "y": [
-            {
-              "test": "!isValid(datum[\"pcp\"]) || !isFinite(+datum[\"pcp\"])",
-              "field": {"group": "height"}
-            },
-            {"scale": "y", "field": "pcp"}
-          ]
+          "y": {"scale": "y", "field": "pcp"}
+        }
+      }
+    },
+    {
+      "name": "layer_1_layer_0_marks",
+      "type": "line",
+      "style": ["line"],
+      "sort": {"field": "datum[\"year\"]"},
+      "from": {"data": "data_3"},
+      "encode": {
+        "update": {
+          "stroke": {"value": "red"},
+          "tooltip": {
+            "signal": "{\"country\": ''+datum[\"country\"], \"year\": format(datum[\"year\"], \"\"), \"pcp\": ''+datum[\"pcp\"]}"
+          },
+          "x": {"scale": "x", "field": "year"},
+          "y": {"scale": "y", "field": "pcp"},
+          "defined": {
+            "signal": "isValid(datum[\"pcp\"]) && isFinite(+datum[\"pcp\"])"
+          }
+        }
+      }
+    },
+    {
+      "name": "layer_1_layer_1_marks",
+      "type": "symbol",
+      "style": ["point"],
+      "from": {"data": "data_4"},
+      "encode": {
+        "update": {
+          "opacity": {"value": 1},
+          "fill": {"value": "#4c78a8"},
+          "tooltip": {
+            "signal": "{\"country\": ''+datum[\"country\"], \"year\": format(datum[\"year\"], \"\"), \"pcp\": ''+datum[\"pcp\"]}"
+          },
+          "x": {"scale": "x", "field": "year"},
+          "y": {"scale": "y", "field": "pcp"}
+        }
+      }
+    },
+    {
+      "name": "layer_2_marks",
+      "type": "text",
+      "style": ["text"],
+      "from": {"data": "data_5"},
+      "encode": {
+        "update": {
+          "dx": {"value": 50},
+          "fill": {"value": "black"},
+          "tooltip": {
+            "signal": "{\"country\": ''+datum[\"country\"], \"year\": format(datum[\"year\"], \"\"), \"pcp\": ''+datum[\"pcp\"]}"
+          },
+          "x": {"scale": "x", "field": "year"},
+          "y": {"scale": "y", "field": "pcp"},
+          "text": {"signal": "''+datum[\"country\"]"},
+          "align": {"value": "center"},
+          "baseline": {"value": "middle"}
+        }
+      }
+    },
+    {
+      "name": "layer_3_marks",
+      "type": "text",
+      "style": ["text"],
+      "from": {"data": "data_6"},
+      "encode": {
+        "update": {
+          "dx": {"value": 50},
+          "fill": {"value": "black"},
+          "tooltip": {
+            "signal": "{\"country\": ''+datum[\"country\"], \"year\": format(datum[\"year\"], \"\"), \"pcp\": ''+datum[\"pcp\"]}"
+          },
+          "x": {"scale": "x", "field": "year"},
+          "y": {"scale": "y", "field": "pcp"},
+          "text": {"signal": "''+datum[\"country\"]"},
+          "align": {"value": "center"},
+          "baseline": {"value": "middle"}
+        }
+      }
+    },
+    {
+      "name": "layer_4_marks",
+      "type": "text",
+      "style": ["text"],
+      "from": {"data": "data_7"},
+      "encode": {
+        "update": {
+          "dx": {"value": 50},
+          "dy": {"value": -10},
+          "fill": {"value": "black"},
+          "tooltip": {
+            "signal": "{\"country\": ''+datum[\"country\"], \"year\": format(datum[\"year\"], \"\"), \"pcp\": ''+datum[\"pcp\"]}"
+          },
+          "x": {"scale": "x", "field": "year"},
+          "y": {"scale": "y", "field": "pcp"},
+          "text": {"signal": "''+datum[\"country\"]"},
+          "align": {"value": "center"},
+          "baseline": {"value": "middle"}
         }
       }
     }
@@ -3405,8 +3580,13 @@
       "type": "point",
       "domain": {
         "fields": [
-          {"data": "data_0", "field": "year"},
-          {"data": "data_1", "field": "year"}
+          {"data": "data_1", "field": "year"},
+          {"data": "data_2", "field": "year"},
+          {"data": "data_3", "field": "year"},
+          {"data": "data_4", "field": "year"},
+          {"data": "data_5", "field": "year"},
+          {"data": "data_6", "field": "year"},
+          {"data": "data_7", "field": "year"}
         ],
         "sort": true
       },
@@ -3418,25 +3598,30 @@
       "type": "linear",
       "domain": {
         "fields": [
-          {"data": "data_0", "field": "pcp"},
-          {"data": "data_1", "field": "pcp"}
+          {"data": "data_1", "field": "pcp"},
+          {"data": "data_2", "field": "pcp"},
+          {"data": "data_3", "field": "pcp"},
+          {"data": "data_4", "field": "pcp"},
+          {"data": "data_5", "field": "pcp"},
+          {"data": "data_6", "field": "pcp"},
+          {"data": "data_7", "field": "pcp"}
         ]
       },
       "range": [{"signal": "height"}, 0],
-      "zero": false,
-      "nice": true
+      "nice": true,
+      "zero": true
     },
     {
       "name": "color",
       "type": "ordinal",
       "domain": {
         "fields": [
-          {"data": "data_0", "field": "country"},
-          {"data": "data_1", "field": "country"}
+          {"data": "data_1", "field": "country"},
+          {"data": "data_2", "field": "country"}
         ],
         "sort": true
       },
-      "range": "category"
+      "range": ["gray"]
     }
   ],
   "axes": [
@@ -3474,13 +3659,25 @@
       "zindex": 0
     }
   ],
-  "legends": [
-    {
-      "title": "Country",
-      "stroke": "color",
-      "symbolType": "circle",
-      "fill": "color",
-      "encode": {"symbols": {"update": {"opacity": {"value": 1}}}}
+  "config": {
+    "axisX": {"grid": false},
+    "axisY": {
+      "labelAlign": "left",
+      "labelFont": "Raleway",
+      "labelPadding": 20,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleX": -165,
+      "titleY": -10
+    },
+    "style": {
+      "text": {"font": "Raleway"},
+      "group-title": {
+        "dy": -16,
+        "font": "Raleway",
+        "fontSize": 18,
+        "fill": "black"
+      }
     }
-  ]
+  }
 }
