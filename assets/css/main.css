@@ -2729,6 +2729,10 @@
 			background: rgba(255, 255, 255, 0.95);
 			bottom: 0;
 			padding: 2.5em;
+			left: 0;
+			right: 0;
+			margin-left: auto;
+			margin-right: auto;
 			position: absolute;
 		}
 
