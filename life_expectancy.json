@@ -3,9 +3,9 @@
   "background": "white",
   "padding": 5,
   "height": 300,
+  "title": {"anchor": "start", "text": "Life Expectancy (Years)"},
   "style": "cell",
   "data": [
-    {"name": "selector027_store"},
     {
       "name": "data-726146a75df8f2c9c956df8ecd524a01",
       "values": [
@@ -1135,10 +1135,6 @@
           "type": "formula",
           "expr": "toString(datum[\"Country\"])",
           "as": "Country"
-        },
-        {
-          "type": "filter",
-          "expr": "indexof([\"Australia\",\"Canada\",\"Germany\",\"France\",\"United Kingdom\",\"Netherlands\",\"United States\"], datum[\"Country\"]) !== -1"
         }
       ]
     },
@@ -1146,6 +1142,68 @@
       "name": "data_1",
       "source": "data_0",
       "transform": [
+        {
+          "type": "filter",
+          "expr": "indexof([\"Australia\",\"Canada\",\"Germany\",\"France\",\"United Kingdom\",\"Netherlands\"], datum[\"Country\"]) !== -1"
+        },
+        {"type": "filter", "expr": "(datum.Year < 2016)"}
+      ]
+    },
+    {
+      "name": "data_2",
+      "source": "data_1",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"Value\"]) && isFinite(+datum[\"Value\"])"
+        }
+      ]
+    },
+    {
+      "name": "data_3",
+      "source": "data_0",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "indexof([\"United States\"], datum[\"Country\"]) !== -1"
+        },
+        {"type": "filter", "expr": "(datum.Year < 2016)"}
+      ]
+    },
+    {
+      "name": "data_4",
+      "source": "data_3",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"Value\"]) && isFinite(+datum[\"Value\"])"
+        }
+      ]
+    },
+    {
+      "name": "data_5",
+      "source": "data_0",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "indexof([\"United States\",\"United Kingdom\",\"Germany\",\"Canada\",\"Netherlands\",\"France\"], datum[\"Country\"]) !== -1"
+        },
+        {"type": "filter", "expr": "(datum.Year === 2015)"},
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"Value\"]) && isFinite(+datum[\"Value\"])"
+        }
+      ]
+    },
+    {
+      "name": "data_6",
+      "source": "data_0",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "indexof([\"Australia\"], datum[\"Country\"]) !== -1"
+        },
+        {"type": "filter", "expr": "(datum.Year === 2015)"},
         {
           "type": "filter",
           "expr": "isValid(datum[\"Value\"]) && isFinite(+datum[\"Value\"])"
@@ -1158,57 +1216,16 @@
     {
       "name": "width",
       "update": "bandspace(domain('x').length, 1, 0.5) * x_step"
-    },
-    {
-      "name": "unit",
-      "value": {},
-      "on": [
-        {"events": "mousemove", "update": "isTuple(group()) ? group() : unit"}
-      ]
-    },
-    {
-      "name": "selector027",
-      "update": "vlSelectionResolve(\"selector027_store\", \"union\")"
-    },
-    {
-      "name": "selector027_tuple",
-      "on": [
-        {
-          "events": [
-            {
-              "source": "scope",
-              "type": "mouseover",
-              "markname": "layer_0_voronoi"
-            }
-          ],
-          "update": "datum && item().mark.marktype !== 'group' ? {unit: \"layer_0\", fields: selector027_tuple_fields, values: [(item().isVoronoi ? datum.datum : datum)[\"Year\"]]} : null",
-          "force": true
-        },
-        {"events": [{"source": "scope", "type": "dblclick"}], "update": "null"}
-      ]
-    },
-    {
-      "name": "selector027_tuple_fields",
-      "value": [{"type": "E", "field": "Year"}]
-    },
-    {
-      "name": "selector027_modify",
-      "on": [
-        {
-          "events": {"signal": "selector027_tuple"},
-          "update": "modify(\"selector027_store\", selector027_tuple, true)"
-        }
-      ]
     }
   ],
   "marks": [
     {
-      "name": "layer_0_pathgroup",
+      "name": "layer_0_layer_0_pathgroup",
       "type": "group",
       "from": {
         "facet": {
-          "name": "faceted_path_layer_0_main",
-          "data": "data_0",
+          "name": "faceted_path_layer_0_layer_0_main",
+          "data": "data_1",
           "groupby": ["Country"]
         }
       },
@@ -1220,12 +1237,11 @@
       },
       "marks": [
         {
-          "name": "layer_0_marks",
+          "name": "layer_0_layer_0_marks",
           "type": "line",
           "style": ["line"],
           "sort": {"field": "datum[\"Year\"]"},
-          "interactive": true,
-          "from": {"data": "faceted_path_layer_0_main"},
+          "from": {"data": "faceted_path_layer_0_layer_0_main"},
           "encode": {
             "update": {
               "stroke": {"scale": "color", "field": "Country"},
@@ -1243,11 +1259,10 @@
       ]
     },
     {
-      "name": "layer_1_marks",
+      "name": "layer_0_layer_1_marks",
       "type": "symbol",
       "style": ["point"],
-      "interactive": false,
-      "from": {"data": "data_1"},
+      "from": {"data": "data_2"},
       "encode": {
         "update": {
           "opacity": {"value": 1},
@@ -1265,6 +1280,102 @@
           ]
         }
       }
+    },
+    {
+      "name": "layer_1_layer_0_marks",
+      "type": "line",
+      "style": ["line"],
+      "sort": {"field": "datum[\"Year\"]"},
+      "from": {"data": "data_3"},
+      "encode": {
+        "update": {
+          "stroke": {"value": "red"},
+          "tooltip": {
+            "signal": "{\"Country\": ''+datum[\"Country\"], \"Year\": format(datum[\"Year\"], \"\"), \"Value\": format(datum[\"Value\"], \"\")}"
+          },
+          "x": {"scale": "x", "field": "Year"},
+          "y": {"scale": "y", "field": "Value"},
+          "defined": {
+            "signal": "isValid(datum[\"Value\"]) && isFinite(+datum[\"Value\"])"
+          }
+        }
+      }
+    },
+    {
+      "name": "layer_1_layer_1_marks",
+      "type": "symbol",
+      "style": ["point"],
+      "from": {"data": "data_4"},
+      "encode": {
+        "update": {
+          "opacity": {"value": 1},
+          "fill": {"value": "#4c78a8"},
+          "tooltip": {
+            "signal": "{\"Country\": ''+datum[\"Country\"], \"Year\": format(datum[\"Year\"], \"\"), \"Value\": format(datum[\"Value\"], \"\")}"
+          },
+          "x": {"scale": "x", "field": "Year"},
+          "y": [
+            {
+              "test": "!isValid(datum[\"Value\"]) || !isFinite(+datum[\"Value\"])",
+              "field": {"group": "height"}
+            },
+            {"scale": "y", "field": "Value"}
+          ]
+        }
+      }
+    },
+    {
+      "name": "layer_2_marks",
+      "type": "text",
+      "style": ["text"],
+      "from": {"data": "data_5"},
+      "encode": {
+        "update": {
+          "dx": {"value": 50},
+          "fill": {"value": "black"},
+          "tooltip": {
+            "signal": "{\"Country\": ''+datum[\"Country\"], \"Year\": format(datum[\"Year\"], \"\"), \"Value\": format(datum[\"Value\"], \"\")}"
+          },
+          "x": {"scale": "x", "field": "Year"},
+          "y": [
+            {
+              "test": "!isValid(datum[\"Value\"]) || !isFinite(+datum[\"Value\"])",
+              "field": {"group": "height"}
+            },
+            {"scale": "y", "field": "Value"}
+          ],
+          "text": {"signal": "''+datum[\"Country\"]"},
+          "align": {"value": "center"},
+          "baseline": {"value": "middle"}
+        }
+      }
+    },
+    {
+      "name": "layer_3_marks",
+      "type": "text",
+      "style": ["text"],
+      "from": {"data": "data_6"},
+      "encode": {
+        "update": {
+          "dx": {"value": 50},
+          "dy": {"value": -10},
+          "fill": {"value": "black"},
+          "tooltip": {
+            "signal": "{\"Country\": ''+datum[\"Country\"], \"Year\": format(datum[\"Year\"], \"\"), \"Value\": format(datum[\"Value\"], \"\")}"
+          },
+          "x": {"scale": "x", "field": "Year"},
+          "y": [
+            {
+              "test": "!isValid(datum[\"Value\"]) || !isFinite(+datum[\"Value\"])",
+              "field": {"group": "height"}
+            },
+            {"scale": "y", "field": "Value"}
+          ],
+          "text": {"signal": "''+datum[\"Country\"]"},
+          "align": {"value": "center"},
+          "baseline": {"value": "middle"}
+        }
+      }
     }
   ],
   "scales": [
@@ -1273,8 +1384,12 @@
       "type": "point",
       "domain": {
         "fields": [
-          {"data": "data_0", "field": "Year"},
-          {"data": "data_1", "field": "Year"}
+          {"data": "data_1", "field": "Year"},
+          {"data": "data_2", "field": "Year"},
+          {"data": "data_3", "field": "Year"},
+          {"data": "data_4", "field": "Year"},
+          {"data": "data_5", "field": "Year"},
+          {"data": "data_6", "field": "Year"}
         ],
         "sort": true
       },
@@ -1286,8 +1401,12 @@
       "type": "linear",
       "domain": {
         "fields": [
-          {"data": "data_0", "field": "Value"},
-          {"data": "data_1", "field": "Value"}
+          {"data": "data_1", "field": "Value"},
+          {"data": "data_2", "field": "Value"},
+          {"data": "data_3", "field": "Value"},
+          {"data": "data_4", "field": "Value"},
+          {"data": "data_5", "field": "Value"},
+          {"data": "data_6", "field": "Value"}
         ]
       },
       "range": [{"signal": "height"}, 0],
@@ -1299,12 +1418,12 @@
       "type": "ordinal",
       "domain": {
         "fields": [
-          {"data": "data_0", "field": "Country"},
-          {"data": "data_1", "field": "Country"}
+          {"data": "data_1", "field": "Country"},
+          {"data": "data_2", "field": "Country"}
         ],
         "sort": true
       },
-      "range": "category"
+      "range": ["gray"]
     }
   ],
   "axes": [
@@ -1325,7 +1444,6 @@
       "scale": "x",
       "orient": "bottom",
       "grid": false,
-      "title": "Year",
       "labelAlign": "right",
       "labelAngle": 270,
       "labelBaseline": "middle",
@@ -1336,20 +1454,30 @@
       "scale": "y",
       "orient": "left",
       "grid": false,
-      "title": "Life Expectancy (Years)",
       "labelOverlap": true,
       "tickCount": {"signal": "ceil(height/40)"},
       "zindex": 0
     }
   ],
-  "legends": [
-    {
-      "stroke": "color",
-      "gradientLength": {"signal": "clamp(height, 64, 200)"},
-      "symbolType": "circle",
-      "title": "Country",
-      "fill": "color",
-      "encode": {"symbols": {"update": {"opacity": {"value": 1}}}}
+  "config": {
+    "axisX": {"grid": false},
+    "axisY": {
+      "labelAlign": "left",
+      "labelFont": "Raleway",
+      "labelPadding": 20,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleX": -165,
+      "titleY": -10
+    },
+    "style": {
+      "text": {"font": "Raleway"},
+      "group-title": {
+        "dy": -16,
+        "font": "Raleway",
+        "fontSize": 18,
+        "fill": "black"
+      }
     }
-  ]
+  }
 }
