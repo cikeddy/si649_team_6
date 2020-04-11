@@ -83,7 +83,7 @@
 
 	.container {
 		width: 70em;
-	} 
+	}
 
 	@media screen and (max-width: 1680px) {
 
@@ -2728,8 +2728,6 @@
 		#header .container {
 			background: rgba(255, 255, 255, 0.95);
 			bottom: 0;
-			left: 31.65%;
-			margin-left: -17.5em;
 			padding: 2.5em;
 			position: absolute;
 		}
