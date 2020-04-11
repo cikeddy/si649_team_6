@@ -135,16 +135,25 @@
 									</div>
 								-->
 							</header>
-							<div class="">
-								<p>A larger percentage of Americans believe their health is above "fair" than the other 6 countries. Based on this statistic and the money we spend on healthcare, we expected other quality metrics to align.</p>
-								  <div id="ph">
+							<div>
+
+								<div style="display: flex; align-items: center">
+									<div>
+										<p>A larger percentage of Americans believe their health is above "fair" than the other 6 countries. Based on this statistic and the money we spend on healthcare, we expected other quality metrics to align.</p>
+									</div>
+									<div id="ph">
 									<script type="text/javascript">
 											let jsonSpec4="ph.json";
 											vegaEmbed('#ph', jsonSpec4,{"renderer":"svg"}).then(function(result) {
 											}).catch(console.error);
 										</script>
 								</div>
+								</div>
+
+								<div style="display: flex; align-items: center">
+									<div>
 									<p>The United States has consistently had the lowest life expectancy at birth compared to the other 6 countries for the past 17 years.</p>
+									</div>
 									<div id="life_expectancy">
 										<script type="text/javascript">
 												let jsonSpec="life_expectancy.json";
@@ -152,20 +161,28 @@
 												}).catch(console.error);
 										</script>
 									</div>
+								</div>
+
+								<div style="display: flex; align-items: center">
 									<div class="image fit primary">
     								<img src="images/img_life.svg" style="width:100%">
 								  </div>
+									<div>
 								  <p>The United States is also the only country that has had no growth in the number of primary care physicians (PCPs) over the past 18 years despite its population continuing to grow.</p>
-								  <div id="pcp">
+									</div>
+									<div id="pcp">
 									<script type="text/javascript">
 											let jsonSpec3="pcp.json";
 											vegaEmbed('#pcp', jsonSpec3,{"renderer":"svg"}).then(function(result) {
 											}).catch(console.error);
 									</script>
 									</div>
+								</div>
 
+								<div style="display: flex; align-items: center">
+									<div>
 								  <p>The United States also has the highest treatable mortality compared to the other 6 countries.</p>
-
+									</div>
 								  <div id="treatable_mortality">
 									<script type="text/javascript">
 											let jsonSpec2="treatable_mortality.json";
@@ -173,9 +190,15 @@
 											}).catch(console.error);
 										</script>
 								</div>
+							</div>
+
+							<div style="display: flex;">
 							<p>In addition, the United States is the only country with less than 99% of its population insured for healthcare.</p>
+							</div>
+
 						</div>
 						<a href="#four" class="goto-next scrolly">Next</a>
+
 					</div>
 				</section>
 
