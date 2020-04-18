@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
-  "background": "white",
+  "background": "transparent",
   "padding": 5,
   "width": 400,
   "height": 400,
@@ -3517,7 +3517,7 @@
       "from": {"data": "data_5"},
       "encode": {
         "update": {
-          "dx": {"value": 50},
+          "dx": {"value": 30},
           "fill": {"value": "black"},
           "tooltip": {
             "signal": "{\"country\": ''+datum[\"country\"], \"year\": format(datum[\"year\"], \"\"), \"pcp\": ''+datum[\"pcp\"]}"
@@ -3537,7 +3537,7 @@
       "from": {"data": "data_6"},
       "encode": {
         "update": {
-          "dx": {"value": 50},
+          "dx": {"value": 30},
           "fill": {"value": "black"},
           "tooltip": {
             "signal": "{\"country\": ''+datum[\"country\"], \"year\": format(datum[\"year\"], \"\"), \"pcp\": ''+datum[\"pcp\"]}"
@@ -3557,7 +3557,7 @@
       "from": {"data": "data_7"},
       "encode": {
         "update": {
-          "dx": {"value": 50},
+          "dx": {"value": 30},
           "dy": {"value": -10},
           "fill": {"value": "black"},
           "tooltip": {

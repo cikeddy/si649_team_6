@@ -1325,7 +1325,7 @@
       "from": {"data": "data_5"},
       "encode": {
         "update": {
-          "dx": {"value": 50},
+          "dx": {"value": 30},
           "fill": {"value": "black"},
           "tooltip": {
             "signal": "{\"Country\": ''+datum[\"Country\"], \"Year\": format(datum[\"Year\"], \"\"), \"Value\": format(datum[\"Value\"], \"\")}"
@@ -1351,7 +1351,7 @@
       "from": {"data": "data_6"},
       "encode": {
         "update": {
-          "dx": {"value": 50},
+          "dx": {"value": 30},
           "dy": {"value": -10},
           "fill": {"value": "black"},
           "tooltip": {
@@ -1441,8 +1441,18 @@
     }
   ],
   "config": {
-    "axisX": {"grid": false, "labelFontSize": 14},
-    "axisY": {"grid": false, "labelFontSize": 14},
+    "axisX": {"grid": false, "labelFont": "Raleway", "labelFontSize": 14},
+    "axisY": {
+      "grid": false,
+      "labelAlign": "left",
+      "labelFont": "Raleway",
+      "labelFontSize": 14,
+      "labelPadding": 20,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleX": -165,
+      "titleY": -10
+    },
     "style": {
       "cell": {"strokeWidth": 0},
       "text": {"align": "left", "font": "Raleway", "fontSize": 14},
