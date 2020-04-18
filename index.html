@@ -63,9 +63,13 @@
 							<h2>1. Which country spends the most on Health Care in our data set?</h2>
 						</header>
 						<p>Based on the trend over time, you can see that in total the U.S. spent the most on healthcare compared to other countries from 1995 to 2018.</p>
-						<div class="">
-							<img src="images/img_1.png" alt="" style="max-width: 60%;"/>
-						</div>
+						<div id = "health_expenditure">
+						<script type="text/javascript">
+								let jsonSpec9="health_expenditure.json";
+								vegaEmbed('#health_expenditure', jsonSpec9,{"renderer":"svg"}).then(function(result) {
+								}).catch(console.error);
+						</script>
+					</div>
 						<p>Using data from 2015, and numbers from the United States as a baseline for comparison (mid-line) the U.S. was second for household expenditure (the amount of money citizens pay out of pocket for their healthcare).  We wanted to see if high healthcare expenditure resulted in high healthcare quality results.</p>
 						<div class="">
 							<img src="images/img_spend.svg" alt="" />
@@ -141,10 +145,10 @@
 									<div>
 										<p>A larger percentage of Americans believe their health is above "fair" than the other 6 countries. Based on this statistic and the money we spend on healthcare, we expected other quality metrics to align.</p>
 									</div>
-									<div id="ph">
+									<div id="perceived_heatlh">
 									<script type="text/javascript">
-											let jsonSpec4="ph.json";
-											vegaEmbed('#ph', jsonSpec4,{"renderer":"svg"}).then(function(result) {
+											let jsonSpec4="perceived_heatlh.json";
+											vegaEmbed('#perceived_heatlh', jsonSpec4,{"renderer":"svg"}).then(function(result) {
 											}).catch(console.error);
 										</script>
 								</div>
