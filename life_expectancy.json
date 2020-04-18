@@ -1325,7 +1325,7 @@
       "from": {"data": "data_5"},
       "encode": {
         "update": {
-          "dx": {"value": 50},
+          "dx": {"value": 30},
           "fill": {"value": "black"},
           "tooltip": {
             "signal": "{\"Country\": ''+datum[\"Country\"], \"Year\": format(datum[\"Year\"], \"\"), \"Value\": format(datum[\"Value\"], \"\")}"
@@ -1351,7 +1351,7 @@
       "from": {"data": "data_6"},
       "encode": {
         "update": {
-          "dx": {"value": 50},
+          "dx": {"value": 30},
           "dy": {"value": -10},
           "fill": {"value": "black"},
           "tooltip": {
