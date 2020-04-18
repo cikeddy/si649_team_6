@@ -3644,7 +3644,17 @@
   ],
   "config": {
     "axisX": {"grid": false, "labelFontSize": 14},
-    "axisY": {"grid": false, "labelFontSize": 14},
+    "axisY": {
+      "grid": false,
+      "labelAlign": "left",
+      "labelFont": "Raleway",
+      "labelFontSize": 14,
+      "labelPadding": 20,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleX": -165,
+      "titleY": -10
+    },
     "style": {
       "cell": {"strokeWidth": 0},
       "text": {"align": "left", "font": "Raleway", "fontSize": 14},
