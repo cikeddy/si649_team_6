@@ -38,7 +38,7 @@
 					<ul class="actions">
 						<p>Although the United States is often viewed as having some of the best healthcare in the world, the validity of this assertion has been called into question for a number of years.
 							With this visualization analysis we endeavor to look at certain factors of healthcare in the US and how it compares to some of the other “comparable” countries.
-							We used to <a href="https://stats.oecd.org/Index.aspx">OECD data </a>set to explore this overarching question.</p>
+							We used the <a href="https://stats.oecd.org/Index.aspx">OECD data </a>set to explore this overarching question.</p>
 						<li><a href="#one" class="button special scrolly">Lets find out!</a></li>
 					</ul>
 				</div>
@@ -62,20 +62,24 @@
 						<header class="major">
 							<h2>1. Which country spends the most on Health Care in our data set?</h2>
 						</header>
-						<p>Based on the trend over time, you can see that in total the U.S. spent the most on healthcare compared to other countries from 1995 to 2015.</p>
+
+						<p>Based on the trend over time, you can see that in total the U.S. spent the most on healthcare compared to other countries from 1995 to 2018.</p>
 						<div id = "health_expenditure">
 						<script type="text/javascript">
 								let jsonSpec9="exp.json";
 								vegaEmbed('#health_expenditure', jsonSpec9,{"renderer":"svg"}).then(function(result) {
 								}).catch(console.error);
 						</script>
-					</div>
-						<p>Using data from 2015, and numbers from the United States as a baseline for comparison (mid-line) the U.S. was second for household expenditure (the amount of money citizens pay out of pocket for their healthcare).  
-						</p>
-						<div class="">
-							<img src="images/img_spend.svg" alt="" />
 						</div>
-						After seeing this information, we wanted to explore if our high healthcare expenditure resulted in high healthcare quality.
+						<br><br>
+						<p>Using data from 2015, and numbers from the United States as a baseline for comparison (mid-line) the U.S. was second for household expenditure (the amount of money citizens pay out of pocket for their healthcare).  We wanted to see if high healthcare expenditure resulted in high healthcare quality results.</p>
+						<div id="spending">
+						<script type="text/javascript">
+								let jsonSpec6="spending.json";
+								vegaEmbed('#spending', jsonSpec6,{"renderer":"svg"}).then(function(result) {
+								}).catch(console.error);
+						</script>
+						</div>
 					</div>
 					<a href="#two" class="goto-next scrolly">Next</a>
 				</div>
@@ -116,9 +120,8 @@
 								<img style="width:auto;height:auto;max-width:100px;max-height:100px;" src="images/img_uk.png" alt="US" />
 								<img style="width:auto;height:auto;max-width:100px;max-height:100px;" src="images/img_nld.png" alt="US" />
 							</div>
+							<br>
 							<p>Based on the criteria mentioned earlier, we decided to select the following seven comparable  countries: <br/><strong>United States, Australia, Canada, France, Germany, Great Britain and Netherlands.</strong></p>
-
-
 					</div>
 					<a href="#three" class="goto-next scrolly">Next</a>
 				</div>
@@ -262,13 +265,13 @@
 									<p>Based on the fact that the United States is an outlier for both household spending and treatable mortality, it appears that spending more money does not necessarily buy better healthcare.</p>
 									<div'>
 										<img style = "width: 75%; margin-left:auto; margin-right:auto; display:block;" src="images/img_worth.svg" alt="" />
-											<img style = "width: 3%; right: -3.7em; top:-21.5em; position: relative;" src="images/mini_fr.png" alt="" />
-											<img style = "width: 3%; right: -5.3em; top:-23.14em; position: relative;" src="images/mini_ndl.png" alt="" />
-											<img style = "width: 3%; right: -6.6em; top:-25.3em; position: relative;" src="images/mini_ca.png" alt="" />
-											<img style = "width: 3%; right: -11.25em; top:-22.5em; position: relative;" src="images/mini_aus.png" alt="" />
-											<img style = "width: 3%; right: -3.4em; top:-28em; position: relative;" src="images/mini_ger.png" alt="" />
-											<img style = "width: 3%; right: 3.25em; top:-28.65em; position: relative;" src="images/mini_uk.png" alt="" />
-											<img style = "width: 3%; right: -13.45em; top:-34.85em; position: relative;" src="images/mini_us.png" alt="" />
+											<img style = "width: 3%; right: -5.45em; top: -8.4em; position: relative;" src="images/mini_fr.png" alt="" />
+											<img style = "width: 3%; right: -7.2em; top:-10.4em; position: relative;" src="images/mini_ndl.png" alt="" />
+											<img style = "width: 3%; right: -8.55em; top:-12.75em; position: relative;" src="images/mini_ca.png" alt="" />
+											<img style = "width: 3%; right: -13.25em; top:-9.55em; position: relative;" src="images/mini_aus.png" alt="" />
+											<img style = "width: 3%; right: -5.25em; top:-15.8em; position: relative;" src="images/mini_ger.png" alt="" />
+											<img style = "width: 3%; right: 1.45em; top:-16.65em; position: relative;" src="images/mini_uk.png" alt="" />
+											<img style = "width: 3%; right: -15.5em; top:-23.75em; position: relative;" src="images/mini_us.png" alt="" />
 									</div>
 								</div>
 								<a href="#five" class="goto-next scrolly">Next</a>
