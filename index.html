@@ -62,7 +62,7 @@
 						<header class="major">
 							<h2>1. Which country spends the most on Health Care in our data set?</h2>
 						</header>
-						<p>Based on the trend over time, you can see that in total the U.S. spent the most on healthcare compared to other countries from 1995 to 2018.</p>
+						<p>Based on the trend over time, you can see that in total the U.S. spent the most on healthcare compared to other countries from 1995 to 2015.</p>
 						<div id = "health_expenditure">
 						<script type="text/javascript">
 								let jsonSpec9="health_expenditure.json";
@@ -70,10 +70,12 @@
 								}).catch(console.error);
 						</script>
 					</div>
-						<p>Using data from 2015, and numbers from the United States as a baseline for comparison (mid-line) the U.S. was second for household expenditure (the amount of money citizens pay out of pocket for their healthcare).  We wanted to see if high healthcare expenditure resulted in high healthcare quality results.</p>
+						<p>Using data from 2015, and numbers from the United States as a baseline for comparison (mid-line) the U.S. was second for household expenditure (the amount of money citizens pay out of pocket for their healthcare).  
+						</p>
 						<div class="">
 							<img src="images/img_spend.svg" alt="" />
 						</div>
+						After seeing this information, we wanted to explore if our high healthcare expenditure resulted in high healthcare quality.
 					</div>
 					<a href="#two" class="goto-next scrolly">Next</a>
 				</div>
@@ -87,8 +89,8 @@
 						<header class="major">
 							<h2>2. Narrowing down our data set</h2>
 						</header>
-						<p>There are more than 80 countries in the OECD dataset that we can compare. After plotting the countries’ health expenditures, we felt that there were too many components in a chart to compare. As a result, we thought it would be best to narrow our scope to 6-8 comparable countries based on a country’s GDP, per-capita GDP, and population.
-							We applied the following criteria to select our comparable countries:
+						<p>There are more than 80 countries in the OECD dataset and after plotting their health expenditures, we felt there were too many components in our visualizatons (many of which might not be comparable). As a result, we thought it would be best to narrow our scope to 6-8 comparable countries based on a country’s GDP, per-capita GDP, and population.
+							We applied the following criteria to select our final set of countries:
 							<ol style="text-align: left; margin-left:4em;"><li>OECD Countries: We selected OECD countries only, which reduced the total number of countries to 35.</li>
 								<li>Economic Status: Divide remaining countries into two categories of High income and High-Medium income to choose from.</li>
 								<li>High: GDP > $2 trillion; per-capita income > $30k; population > 60m </li>
@@ -144,8 +146,10 @@
 								<div style="display: flex; align-items: top; margin-bottom:4em;">
 									<div style = "padding-right: 2em; text-align: left; ">
 										<h1>The U.S. Has the Highest Percieved Health </h1>
-										<p style="text-align: center; align-content:bottom;"><img style = "width: 7em; margin:auto 0;" src="images/higher_icon.png" alt="" /></p>
-										<p>A larger percentage of Americans haver believed their health is above "fair" than the 5 of the comparable countries over the past 10 years.
+										<p style="text-align: center; align-content:bottom;"><img style = "width: 7em; margin:auto 0; margin-top:16px;" src="images/higher_better.png" alt="" /><br/>
+											<strong style="color:#3eaf49;">Higher is Better</strong>
+										</p>
+										<p>The vast majority of Americans have believed their health is above "fair" over the past 10 years. The U.S. has consistely ranked in the top 2 among comparable countries and, in 2015, ranked highest for this quality metric.
 											Based on this statistic and the money we spend on healthcare, we expected other quality metrics to align.</p>
 									</div>
 									<div style = "padding-bottom: 15em;">
@@ -163,7 +167,10 @@
 								<div style="display: flex; align-items: top; margin-bottom:4em;">
 									<div style = "padding-right: 2em; text-align: left;">
 										<h1>The U.S. Has the Worst Life Expectancy </h1>
-										<p style="text-align: center; align-content:bottom;"><img style = "width: 7em; margin:auto 0;" src="images/higher_icon.png" alt="" /></p>
+										<p style="text-align: center; align-content:bottom;"><img style = "width: 7em; margin:auto 0;  margin-top:16px;" src="images/lower_worse.png" alt="" />
+											<br/>
+											<strong style="color:#ac1a2f;">Lower is Worse</strong>
+										</p>
 										<p>Surprisingly, the United States has consistently had the lowest life expectancy at birth compared to the other 6 countries for the past 15 years.</p>
 									</div>
 									<div style = "padding-bottom: 15em;">
@@ -180,7 +187,10 @@
 								<div style="display: flex; align-items: top; margin-bottom:4em;">
 									<div style = "padding-right: 2em; text-align: left; ">
 										<h1>The U.S. Has the Lowest Number of Primary Care Physicians per 1,000 People </h1>
-										<p style="text-align: center; align-content:bottom;"><img style = "width: 7em; margin:auto 0;" src="images/higher_icon.png" alt="" /></p>
+										<p style="text-align: center; align-content:bottom;"><img style = "width: 7em; margin:auto 0;  margin-top:16px;" src="images/lower_worse.png" alt="" />
+											<br/>
+											<strong style="color:#ac1a2f;">Lower is Worse</strong>
+										</p>
 								  <p>Again, the U.S. performs poorly for health care capacity; it is one of the only countries that has had no growth in the number of primary care physicians (PCPs) over the past 15 years despite its population continuing to grow.</p>
 									</div>
 									<div style = "padding-bottom: 15em;">
@@ -197,7 +207,10 @@
 								<div style="display: flex; align-items: top; margin-bottom:4em;">
 									<div style = "padding-right: 2em; text-align: left; ">
 										<h1>The U.S. Has the Highest Treatable Mortality </h1>
-										<p style="text-align: center; align-content:bottom;"><img style = "width: 7em; margin:auto 0;" src="images/higher_icon.png" alt="" /></p>
+										<p style="text-align: center; align-content:bottom;"><img style = "width: 7em; margin:auto 0;  margin-top:16px;" src="images/higher_worse.png" alt="" />
+											<br/>
+											<strong style="color:#ac1a2f;">Higher is Worse</strong>
+										</p>
 								  <p>The United States has also had the highest treatable mortality (deaths per 100,000 considered treatable through more effective and timely health care interventions) compared to the other 6 countries over the past 16 years.</p>
 									</div>
 									<div style = "padding-bottom: 15em;">
@@ -246,7 +259,7 @@
 									<header class="major">
 										<h2>4. Is it worth it to spend more?</h2>
 									</header>
-									<p>Interestingly, the United States is an outlier for both household spending and treatable mortality.</p>
+									<p>Based on the fact that the United States is an outlier for both household spending and treatable mortality, it appears that spending more money does not necessarily buy better healthcare.</p>
 									<div'>
 										<img style = "width: 75%; margin-left:auto; margin-right:auto; display:block;" src="images/img_worth.svg" alt="" />
 											<img style = "width: 3%; right: -3.7em; top:-21.5em; position: relative;" src="images/mini_fr.png" alt="" />
