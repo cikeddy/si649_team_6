@@ -4,7 +4,7 @@
   "padding": 5,
   "data": [
     {
-      "name": "selector053_store",
+      "name": "selector056_store",
       "values": [
         {
           "unit": "concat_0_layer_0",
@@ -8445,7 +8445,7 @@
       "transform": [
         {
           "type": "filter",
-          "expr": "(vlSelectionTest(\"selector053_store\", datum))"
+          "expr": "(vlSelectionTest(\"selector056_store\", datum))"
         },
         {
           "type": "filter",
@@ -8481,7 +8481,7 @@
         },
         {
           "type": "filter",
-          "expr": "(vlSelectionTest(\"selector053_store\", datum))"
+          "expr": "(vlSelectionTest(\"selector056_store\", datum))"
         },
         {
           "type": "filter",
@@ -8518,11 +8518,11 @@
     }
   ],
   "signals": [
-    {"name": "concat_0_width", "value": 400},
+    {"name": "concat_0_width", "value": 200},
     {"name": "concat_0_height", "value": 300},
-    {"name": "concat_1_width", "value": 400},
+    {"name": "concat_1_width", "value": 200},
     {"name": "concat_1_height", "value": 300},
-    {"name": "concat_2_width", "value": 20},
+    {"name": "concat_2_width", "value": 100},
     {"name": "concat_2_y_step", "value": 20},
     {
       "name": "concat_2_height",
@@ -8536,8 +8536,8 @@
       ]
     },
     {
-      "name": "selector053",
-      "update": "vlSelectionResolve(\"selector053_store\", \"union\")"
+      "name": "selector056",
+      "update": "vlSelectionResolve(\"selector056_store\", \"union\")"
     }
   ],
   "layout": {"padding": 20, "bounds": "full", "align": "each"},
@@ -8558,26 +8558,26 @@
       },
       "signals": [
         {
-          "name": "selector053_tuple",
+          "name": "selector056_tuple",
           "on": [
             {
               "events": [{"source": "scope", "type": "click"}],
-              "update": "datum && item().mark.marktype !== 'group' ? {unit: \"concat_0_layer_0\", fields: selector053_tuple_fields, values: [(item().isVoronoi ? datum.datum : datum)[\"country\"]]} : null",
+              "update": "datum && item().mark.marktype !== 'group' ? {unit: \"concat_0_layer_0\", fields: selector056_tuple_fields, values: [(item().isVoronoi ? datum.datum : datum)[\"country\"]]} : null",
               "force": true
             },
             {"events": [{"source": "scope", "type": "none"}], "update": "null"}
           ]
         },
         {
-          "name": "selector053_tuple_fields",
+          "name": "selector056_tuple_fields",
           "value": [{"type": "E", "field": "country"}]
         },
         {
-          "name": "selector053_modify",
+          "name": "selector056_modify",
           "on": [
             {
-              "events": {"signal": "selector053_tuple"},
-              "update": "modify(\"selector053_store\", selector053_tuple, true)"
+              "events": {"signal": "selector056_tuple"},
+              "update": "modify(\"selector056_store\", selector056_tuple, true)"
             }
           ]
         }
@@ -8666,26 +8666,26 @@
       },
       "signals": [
         {
-          "name": "selector053_tuple",
+          "name": "selector056_tuple",
           "on": [
             {
               "events": [{"source": "scope", "type": "click"}],
-              "update": "datum && item().mark.marktype !== 'group' ? {unit: \"concat_1_layer_0_layer_0\", fields: selector053_tuple_fields, values: [(item().isVoronoi ? datum.datum : datum)[\"country\"]]} : null",
+              "update": "datum && item().mark.marktype !== 'group' ? {unit: \"concat_1_layer_0_layer_0\", fields: selector056_tuple_fields, values: [(item().isVoronoi ? datum.datum : datum)[\"country\"]]} : null",
               "force": true
             },
             {"events": [{"source": "scope", "type": "none"}], "update": "null"}
           ]
         },
         {
-          "name": "selector053_tuple_fields",
+          "name": "selector056_tuple_fields",
           "value": [{"type": "E", "field": "country"}]
         },
         {
-          "name": "selector053_modify",
+          "name": "selector056_modify",
           "on": [
             {
-              "events": {"signal": "selector053_tuple"},
-              "update": "modify(\"selector053_store\", selector053_tuple, true)"
+              "events": {"signal": "selector056_tuple"},
+              "update": "modify(\"selector056_store\", selector056_tuple, true)"
             }
           ]
         }
