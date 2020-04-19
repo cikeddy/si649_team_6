@@ -38,7 +38,7 @@
 					<ul class="actions">
 						<p>Although the United States is often viewed as having some of the best healthcare in the world, the validity of this assertion has been called into question for a number of years.
 							With this visualization analysis we endeavor to look at certain factors of healthcare in the US and how it compares to some of the other “comparable” countries.
-							We used to <a href="https://stats.oecd.org/Index.aspx">OECD data </a>set to explore this overarching question.</p>
+							We used the <a href="https://stats.oecd.org/Index.aspx">OECD data </a>set to explore this overarching question.</p>
 						<li><a href="#one" class="button special scrolly">Lets find out!</a></li>
 					</ul>
 				</div>
@@ -64,9 +64,14 @@
 						</header>
 
 						<p>Based on the trend over time, you can see that in total the U.S. spent the most on healthcare compared to other countries from 1995 to 2018.</p>
-						<div class="">
-							<img src="images/img_1.png" alt="" style="max-width: 60%;"/>
+						<div id = "health_expenditure">
+						<script type="text/javascript">
+								let jsonSpec9="exp.json";
+								vegaEmbed('#health_expenditure', jsonSpec9,{"renderer":"svg"}).then(function(result) {
+								}).catch(console.error);
+						</script>
 						</div>
+						<br><br>
 						<p>Using data from 2015, and numbers from the United States as a baseline for comparison (mid-line) the U.S. was second for household expenditure (the amount of money citizens pay out of pocket for their healthcare).  We wanted to see if high healthcare expenditure resulted in high healthcare quality results.</p>
 						<div id="spending">
 						<script type="text/javascript">
@@ -74,6 +79,7 @@
 								vegaEmbed('#spending', jsonSpec6,{"renderer":"svg"}).then(function(result) {
 								}).catch(console.error);
 						</script>
+						</div>
 						After seeing this information, we wanted to explore if our high healthcare expenditure resulted in high healthcare quality.
 					</div>
 					<a href="#two" class="goto-next scrolly">Next</a>
@@ -115,9 +121,8 @@
 								<img style="width:auto;height:auto;max-width:100px;max-height:100px;" src="images/img_uk.png" alt="US" />
 								<img style="width:auto;height:auto;max-width:100px;max-height:100px;" src="images/img_nld.png" alt="US" />
 							</div>
+							<br>
 							<p>Based on the criteria mentioned earlier, we decided to select the following seven comparable  countries: <br/><strong>United States, Australia, Canada, France, Germany, Great Britain and Netherlands.</strong></p>
-
-
 					</div>
 					<a href="#three" class="goto-next scrolly">Next</a>
 				</div>
