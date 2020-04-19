@@ -67,8 +67,12 @@
 							<img src="images/img_1.png" alt="" style="max-width: 60%;"/>
 						</div>
 						<p>Using data from 2015, and numbers from the United States as a baseline for comparison (mid-line) the U.S. was second for household expenditure (the amount of money citizens pay out of pocket for their healthcare).  We wanted to see if high healthcare expenditure resulted in high healthcare quality results.</p>
-						<div class="">
-							<img src="images/img_spend.svg" alt="" />
+						<div id="spending">
+						<script type="text/javascript">
+								let jsonSpec5="spending.json";
+								vegaEmbed('#spending', jsonSpec3,{"renderer":"svg"}).then(function(result) {
+								}).catch(console.error);
+						</script>
 						</div>
 					</div>
 					<a href="#two" class="goto-next scrolly">Next</a>
