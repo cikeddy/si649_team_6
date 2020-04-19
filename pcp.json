@@ -1,8 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
-  "background": "white",
+  "background": "transparent",
   "padding": 5,
-  "height": 300,
+  "width": 400,
+  "height": 400,
   "title": {
     "anchor": "start",
     "text": "Primary Care Physician per 1,000 Population"
@@ -3415,13 +3416,6 @@
       ]
     }
   ],
-  "signals": [
-    {"name": "x_step", "value": 20},
-    {
-      "name": "width",
-      "update": "bandspace(domain('x').length, 1, 0.5) * x_step"
-    }
-  ],
   "marks": [
     {
       "name": "layer_0_layer_0_pathgroup",
@@ -3523,7 +3517,7 @@
       "from": {"data": "data_5"},
       "encode": {
         "update": {
-          "dx": {"value": 50},
+          "dx": {"value": 30},
           "fill": {"value": "black"},
           "tooltip": {
             "signal": "{\"country\": ''+datum[\"country\"], \"year\": format(datum[\"year\"], \"\"), \"pcp\": ''+datum[\"pcp\"]}"
@@ -3531,7 +3525,7 @@
           "x": {"scale": "x", "field": "year"},
           "y": {"scale": "y", "field": "pcp"},
           "text": {"signal": "''+datum[\"country\"]"},
-          "align": {"value": "center"},
+          "fontSize": {"value": 14},
           "baseline": {"value": "middle"}
         }
       }
@@ -3543,7 +3537,7 @@
       "from": {"data": "data_6"},
       "encode": {
         "update": {
-          "dx": {"value": 50},
+          "dx": {"value": 30},
           "fill": {"value": "black"},
           "tooltip": {
             "signal": "{\"country\": ''+datum[\"country\"], \"year\": format(datum[\"year\"], \"\"), \"pcp\": ''+datum[\"pcp\"]}"
@@ -3551,7 +3545,7 @@
           "x": {"scale": "x", "field": "year"},
           "y": {"scale": "y", "field": "pcp"},
           "text": {"signal": "''+datum[\"country\"]"},
-          "align": {"value": "center"},
+          "fontSize": {"value": 14},
           "baseline": {"value": "middle"}
         }
       }
@@ -3563,7 +3557,7 @@
       "from": {"data": "data_7"},
       "encode": {
         "update": {
-          "dx": {"value": 50},
+          "dx": {"value": 30},
           "dy": {"value": -10},
           "fill": {"value": "black"},
           "tooltip": {
@@ -3572,7 +3566,7 @@
           "x": {"scale": "x", "field": "year"},
           "y": {"scale": "y", "field": "pcp"},
           "text": {"signal": "''+datum[\"country\"]"},
-          "align": {"value": "center"},
+          "fontSize": {"value": 14},
           "baseline": {"value": "middle"}
         }
       }
@@ -3594,7 +3588,7 @@
         ],
         "sort": true
       },
-      "range": {"step": {"signal": "x_step"}},
+      "range": [0, {"signal": "width"}],
       "padding": 0.5
     },
     {
@@ -3630,19 +3624,6 @@
   ],
   "axes": [
     {
-      "scale": "y",
-      "orient": "left",
-      "gridScale": "x",
-      "grid": true,
-      "tickCount": {"signal": "ceil(height/40)"},
-      "domain": false,
-      "labels": false,
-      "maxExtent": 0,
-      "minExtent": 0,
-      "ticks": false,
-      "zindex": 0
-    },
-    {
       "scale": "x",
       "orient": "bottom",
       "grid": false,
@@ -3662,18 +3643,21 @@
     }
   ],
   "config": {
-    "axisX": {"grid": false},
+    "axisX": {"grid": false, "labelFont": "Raleway", "labelFontSize": 14},
     "axisY": {
+      "grid": false,
       "labelAlign": "left",
       "labelFont": "Raleway",
-      "labelPadding": 20,
+      "labelFontSize": 14,
+      "labelPadding": 30,
       "titleAlign": "left",
       "titleAngle": 0,
       "titleX": -165,
       "titleY": -10
     },
     "style": {
-      "text": {"font": "Raleway"},
+      "cell": {"strokeWidth": 0},
+      "text": {"align": "left", "font": "Raleway", "fontSize": 14},
       "group-title": {
         "dy": -16,
         "font": "Raleway",
