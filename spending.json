@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "background": "transparent",
   "padding": 5,
-  "width": 800,
+  "width": 700,
   "height": 600,
   "title": {"text": "United States", "frame": "group"},
   "style": "cell",
