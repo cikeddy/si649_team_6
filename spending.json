@@ -2,8 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "background": "transparent",
   "padding": 5,
-  "width": 700,
-  "height": 500,
+  "width": 800,
+  "height": 600,
   "title": {"text": "United States", "frame": "group"},
   "style": "cell",
   "data": [
@@ -8459,11 +8459,21 @@
   ],
   "config": {
     "axisX": {"grid": false, "labelFontSize": 14},
-    "axisY": {"grid": false, "labelFont": "Raleway", "labelFontSize": 14},
+    "axisY": {
+      "grid": false,
+      "labelFont": "Raleway",
+      "labelFontSize": 14,
+      "labelSeparation": 100
+    },
     "style": {
       "cell": {"strokeWidth": 0},
       "text": {"font": "Raleway", "fontSize": 14, "text": "country"},
-      "group-title": {"font": "Raleway", "fontSize": 18, "fill": "black"}
+      "group-title": {
+        "dy": -16,
+        "font": "Raleway",
+        "fontSize": 18,
+        "fill": "black"
+      }
     }
   }
 }
