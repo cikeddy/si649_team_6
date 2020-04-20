@@ -4,7 +4,10 @@
   "padding": 5,
   "width": 700,
   "height": 600,
-  "title": {"text": "United States", "frame": "group"},
+  "title": {
+    "anchor": "start",
+    "text": "Household Expenditure (with U.S. as Baseline)"
+  },
   "style": "cell",
   "data": [
     {
@@ -8381,7 +8384,8 @@
           "type": "formula",
           "expr": "(datum.household_spending - 1061.914)",
           "as": "household_spending_calc"
-        }
+        },
+        {"type": "filter", "expr": "(datum.country !== 'United States')"}
       ]
     },
     {
